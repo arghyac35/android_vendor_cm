@@ -91,19 +91,19 @@ include vendor/cm/config/twrp.mk
 endif
 
 # Bootanimation
-TARGET_BOOTANIMATION_480P := $(shell \
+TARGET_BOOTANIMATION_540P := $(shell \
   if [ $(TARGET_SCREEN_WIDTH) -le 720 ]; then \
     echo 'true'; \
   else \
     echo ''; \
   fi )
 
-ifeq ($(TARGET_BOOTANIMATION_480P),true)
+ifeq ($(TARGET_BOOTANIMATION_540P),true)
 PRODUCT_COPY_FILES += \
-    vendor/cm/bootanimation/bootanimation-480p.zip:system/media/bootanimation.zip
+    vendor/cm/bootanimation/bootanimation-540p.zip:system/media/bootanimation.zip
 else
 PRODUCT_COPY_FILES += \
-    vendor/cm/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+    vendor/cm/bootanimation/bootanimation-1080p.zip:system/media/bootanimation.zip
 endif
 
 # Required CM packages
