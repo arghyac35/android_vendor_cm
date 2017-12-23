@@ -135,6 +135,7 @@ PRODUCT_PACKAGES += \
     Eleven \
     ExactCalculator \
     Jelly \
+    Lawnchair \
     LockClock \
     ThemeInterfacer \
     Trebuchet \
