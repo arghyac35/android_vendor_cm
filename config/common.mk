@@ -318,15 +318,15 @@ ifeq ($(CM_BUILDTYPE), RELEASE)
 else
     ifeq ($(CM_VERSION_MAINTENANCE),0)
         ifeq ($(CM_BUILDTYPE), UNOFFICIAL)
-            LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d_%H%M%S)-merothh-$(CM_BUILD)
+            LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d_%H%M%S)-arghyac35-$(CM_BUILD)
         else
-            LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-merothh-$(CM_BUILD)
+            LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-arghyac35-$(CM_BUILD)
         endif
     else
         ifeq ($(CM_BUILDTYPE), UNOFFICIAL)
-            LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(CM_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d_%H%M%S)-merothh-$(CM_BUILD)
+            LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(CM_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d_%H%M%S)-arghyac35-$(CM_BUILD)
         else
-            LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(CM_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d)-merothh-$(CM_BUILD)
+            LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(CM_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d)-arghyac35-$(CM_BUILD)
         endif
     endif
 endif
