@@ -137,6 +137,7 @@ PRODUCT_PACKAGES += \
     Jelly \
     LockClock \
     Launcher3 \
+    RetroMusic \
     ThemeInterfacer \
     Trebuchet \
     Updater \
