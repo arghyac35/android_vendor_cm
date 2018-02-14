@@ -136,6 +136,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Jelly \
     LockClock \
+    Launcher3 \
     ThemeInterfacer \
     Trebuchet \
     Updater \
